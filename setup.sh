@@ -16,3 +16,5 @@ nvm use v0.10.12
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
+# install programming dependencies
+sudo apt-get install -y python-software-properties python g++ make
