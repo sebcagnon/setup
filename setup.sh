@@ -31,3 +31,9 @@ cd
 # changing main terminal to zsh
 sudo apt-get install -y zsh
 chsh -s /bin/zsh
+
+# installing Heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+heroku login
+ssh-keygen -t rsa
+heroku keys:add
