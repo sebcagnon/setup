@@ -18,3 +18,14 @@ sudo apt-get install -y rlwrap
 
 # install programming dependencies
 sudo apt-get install -y python-software-properties python g++ make
+
+# installing ctafconf environment
+mkdir -p ~/.config
+git clone git://github.com/ctaf42/ctafconf.git
+cd ctafconf
+./bin/ct-installconf
+sed "s/var_set ctafconf_profiles.*/var_set ctafconf_profiles 'aldebaran'/" -i ~/.config/ctafconf/user-profile.sh
+cd
+
+# changing main terminal to zsh
+chsh -s /bin/zsh
