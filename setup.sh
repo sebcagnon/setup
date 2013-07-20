@@ -38,3 +38,7 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
 ssh-keygen -t rsa
 heroku keys:add
+
+# git config
+git config --global user.name "Sebastien Cagnon"
+git config --global user.email cagnonsebastien@gmail.com
