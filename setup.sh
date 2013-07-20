@@ -31,7 +31,7 @@ cd
 
 # changing main terminal to zsh
 sudo apt-get install -y zsh
-chsh -s /bin/zsh
+sudo chsh -s /usr/bin/zsh ubuntu
 
 # installing Heroku
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
